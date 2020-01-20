@@ -115,7 +115,9 @@ $(document).ready(function() {
 				top:newTop+"px",
 				left:newLeft+"px",
 				fontSize: parseInt(20/a)+"em",
-				lineHeight:1.5+"em"
+				lineHeight:1.5+"em",
+				transition:"all .3s" ,
+  				animation: "myfirst .3s"
 			})
 		$("body").append(elemNew);
 		$("#" + togg).toggleClass("ok");
@@ -293,7 +295,8 @@ $(document).ready(function() {
 				width:divSide+"px",
 				height:divSide+"px",
 				top:array[i.dataMyId-1][0]+"px",
-				left:array[i.dataMyId-1][1]+"px"
+				left:array[i.dataMyId-1][1]+"px",
+				transition:"all .3s"
 			})
 			 if(i.html<100){
 			 	backElem.css({
@@ -316,6 +319,10 @@ $(document).ready(function() {
 			 if($("#"+i.dataMyId).attr("class")=="ok"){
 				$("#"+i.dataMyId).toggleClass("ok");
 			}
+			backElem.css({
+				
+				
+			})
 		});
 		ochki=newOch;
 		record=newRec;
