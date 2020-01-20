@@ -1,0 +1,176 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+main{
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	width: 500px;
+	height: 500px;
+	margin: 50px auto;
+	padding: 4px;
+	border-radius: 8px;
+	background: silver;
+}
+
+main>div{
+	border-radius: 6px;
+	background: #2b2f31;
+}
+
+button{
+	display: block;
+	width: 100px;
+	height: 40px;
+	border-radius: 20px;
+	margin: 20px auto;
+}
+
+.new{
+	position: absolute;
+	border-radius: 6px;
+	margin: 4px;
+	text-align: center;
+	z-index: 100
+}
+
+
+.new {
+  transition:all .3s ;
+  animation: myfirst .3s;
+}
+
+.val2{
+	background: #00ffff;
+}
+.val4{
+	background: #fb4242;
+	
+}
+.val8{
+	background: #d3f744;
+	
+}
+.val16{
+	background: #2590ec;
+	
+}
+.val32{
+	background: #fd0303;
+	
+}
+.val64{
+	background: #0d7f05;
+	
+}
+.val128{
+	background: #f78f24;
+	
+}
+.val256{
+	background: #0c44e2;
+	
+}
+.val512{
+	background: #fd003a;
+	
+}
+.val1024{
+	background: #ff04ec;
+	
+}
+.val2048{
+	background: #a4e89c;
+	
+}
+
+.valBig{
+	background: #a4e89c;
+	
+}
+.gameOver{
+	position: absolute;
+	width: 508px;
+	height: 508px;
+	text-align: center;
+	font-size: 4em;
+	line-height: 7.7em;
+	background: #0072ff;
+	opacity: .7;
+	z-index: 999
+}
+
+.isGameOver{
+
+}
+
+.val2,.val4,.val8,.val16,.val32,.val64,.val128,
+.val256,.val512,.val1024,.val2048,.val4096,.valBig{
+  	animation: myfirst .3s;
+}
+
+
+
+.frame{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	width: 300px;
+	height: 50px;
+	font-size: 50px;
+	text-align: center;
+	margin: 40px auto;
+}
+
+.frameClass{
+	width: 500px;
+	font-size: 30px;
+	margin: auto;
+}
+
+.after,.before{
+	width: 20px;
+	height: 20px;
+	border-right: 5px solid;
+	border-top: 5px solid 
+}
+
+.after{
+	transform: rotate(225deg);
+}
+
+.before{
+	transform: rotate(45deg);
+}
+
+.after:hover,.before:hover{
+	cursor: pointer;
+	border-color: red;
+	transition: all .2s
+}
+
+.control{
+	position: absolute;
+	width: 90px;
+	height: 50px;
+	top: 0;
+	left: calc(50% + 160px)
+}
+
+.control>img{
+	width: 40px;
+	height: 40px;
+	cursor: pointer
+
+}
+
+
+@keyframes myfirst
+{
+    0%{opacity: 0;transform:scale(0)}
+    75% {opacity: .5;transform:scale(1.3)}
+    100%{opacity: 1;transform:scale(1)}
+}
