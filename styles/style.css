@@ -35,13 +35,6 @@ button{
 	text-align: center;
 	z-index: 100
 }
-
-
-.new {
-  transition:all .3s ;
-  animation: myfirst .3s;
-}
-
 .val2{
 	background: #00ffff;
 }
@@ -102,17 +95,6 @@ button{
 	z-index: 999
 }
 
-.isGameOver{
-
-}
-
-.val2,.val4,.val8,.val16,.val32,.val64,.val128,
-.val256,.val512,.val1024,.val2048,.val4096,.valBig{
-  	animation: myfirst .3s;
-}
-
-
-
 .frame{
 	display: flex;
 	flex-wrap: wrap;
@@ -164,7 +146,6 @@ button{
 	width: 40px;
 	height: 40px;
 	cursor: pointer
-
 }
 
 
